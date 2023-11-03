@@ -1,0 +1,12 @@
+# Introduction
+This notebook presents an overview of classifying hyperbolic marketing in YouTube video titles, more commonly known as "clickbait". This project was originally designed as a final project for [Info 159: Natural Language Project](https://people.ischool.berkeley.edu/~dbamman/nlp23.html) at UC Berkeley, taught by [Professor David Bamman](https://people.ischool.berkeley.edu/~dbamman/).
+
+# Getting Started
+Set up the environment by running `conda env create -f environment.yml` in the command line. The main source code for the project is included in `model.ipynb`.
+
+# Project Overview
+This project involves analyzing the ["YouTube Statistics" dataset published by Advay Patil on Kaggle](https://www.kaggle.com/datasets/advaypatil/youtube-statistics?select=videos-stats.csv), developing annotaion guidelines for assigning labels to represent the magnitude of clickbait in a given title, implementing a methodology to classify clickbait labels.
+
+In the dataset of YouTube video titles, the categories we are considering to annotate are related to clickbait. Clickbait titles are known to utilize sensational language to attract users’ attention, but often include exaggerated and misleading claims. Creating a clickbait classifier through our annotation project would enable two things: 1. false claims or claims blown out of proportion can be detected to hide videos from young or vulnerable viewers on Youtube 2. Labeling clickbait may help in the analysis of video click rate and performance by creators. For our project, we will be considering a few approaches. 
+
+One approach of classification would be the implementation of the binary labels of “clickbait” or “not clickbait”. While this would enable us to be more objective in our decisions, there are less guidelines to define and comprehensively follow. For a second approach, we can assign a value to the YouTube video titles on an ordinal scale of 1-5 (5 being the most significantly clickbait). This method would incorporate further subjective decision-making, as humans consider how clickbait a video title is or not. Clickbait becomes more of a relative characteristic in this second method, as we can place YouTube video titles into tiers somewhat. Under both methods, the labels are not necessarily deterministic, as deciding that a video is clickbait requires human context. 
